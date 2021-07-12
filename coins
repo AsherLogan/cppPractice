@@ -1,3 +1,5 @@
+//determines how many of each coin type are in a specified amount of money
+
 #include <iostream>
 
 using namespace std;
