@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    cout << "Please enter four positive integers separated by a space: ";
+    int input{};
+    cin >> input >> input >> input >> input;
+    
+    int evenCount = 0;
+    int oddCount = 0;
+    
+    for (int i = 0; i <= 4; i++){
+        if (input % 2 == 0)
+            {evenCount++;}
+                else (input % 2 != 0);
+                    {oddCount++;}
+        i++;
+    }
+    
+    cout << "There were " << evenCount << " even numbers and " << oddCount << " odd numbers.";
+    
+    return 0;
+}
