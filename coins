@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+  cout << "Enter the number of whole dollars: ";
+  int dollars{};
+  cin >> dollars;
+ 
+  cout << "Enter the number of cents: ";
+  int cents{};
+  cin >> cents;
+
+  int amount = (dollars * 100) + cents;
+ 
+  int quarters = amount / 25;
+  amount = amount - (quarters*25);
+
+  int dimes = amount / 10;
+  amount = amount - (dimes*10);
+
+  int nickles = amount / 5;
+  amount = amount - (nickles*5);
+
+  int pennies = amount / 1;
+
+  cout << "There are " << quarters << " quarters, " << dimes << " dimes, " <<
+    nickles << " nickles, and " << pennies << " pennies.";
+
+  return 0;
+}
