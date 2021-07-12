@@ -1,3 +1,5 @@
+//determines if a student can graduate based on two grades input by user
+
 #include <iostream>
 #include <string>
 
