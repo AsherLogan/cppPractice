@@ -1,0 +1,47 @@
+//calculator program with 4 functions
+
+#include <iostream>
+
+double inputValue()
+{
+    std::cout << "Please enter a double value: ";
+    double value{};
+    std::cin >> value;
+    
+    return value;
+}
+
+char inputOp()
+{
+    std::cout << "Enter one of the following operators: +, -, *, /: ";
+    char op{};
+    std::cin >> op;
+    
+    return op;
+}
+
+void calcSum(double x, double y, char op)
+{
+    if (op == '+')
+        std::cout << x << " + " << y << " = " << x + y << '\n';
+    else if (op == '-')
+        std::cout << x << " - " << y << " = " << x - y << '\n';
+    else if (op == '*')
+        std::cout << x << " * " << y << " = " << x * y << '\n';
+    else if (op == '/')
+        std::cout << x << " / " << y << " = " << x / y << '\n';
+    else
+        std::cout << "Invalid operator.";
+}
+
+int main()
+{
+    double x {inputValue()};
+    double y {inputValue()};
+    
+    char op {inputOp()};
+    
+    calcSum(x, y, op);
+    
+    return 0;
+}
