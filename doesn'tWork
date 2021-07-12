@@ -1,3 +1,6 @@
+//determine how many numbers are odd and even from four user inputs
+//currently doesn't work, outputs 0 evens, 3 odds every time
+
 #include <iostream>
 
 using namespace std;
