@@ -5,12 +5,15 @@
 int main()
 {
 	std::cout << "Please enter a postive integer: ";
-	unsigned int numEvens{};
+	int numEvens{};
 	std::cin >> numEvens;
-
-  for (int i = 1; i <= numEvens; i++)
+	
+	for (int i = 1; i <= (numEvens * 2); i++)
 	{
-		std::cout << i << '\n';
+		if (i % 2 == 0)
+			std::cout << i << '\n';
+		else
+			continue;
 		
 	}
 
