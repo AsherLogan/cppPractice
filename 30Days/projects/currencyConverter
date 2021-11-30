@@ -1,0 +1,89 @@
+#include <iostream>
+#include <cmath>
+#include <cstring>
+
+double cashInput() {
+    double cash;
+
+    std::cout << "Please enter currency amount: \n";
+    std::cin >> cash;
+
+    //cash must be positive num 
+    do {
+        if (cash <= 0) {
+            std::cout << "Please enter a positive value.\n";
+            std::cout << "Please enter currency amount: \n";
+            std::cin >> cash;
+        }
+    } while (cash <= 0);
+
+    return cash;
+}
+
+
+
+int currencyInput() {
+    int currency;
+
+    std::cout << "What currency would you like to convert to? \n";
+    std::cout << "1. US Dollar  2. Euro  3. Pound  4. Rupee\n5. Australian Dollar  6. Canadian Dollar  7. Singapore Dollar\n 8. Franc  9. Ringgit  10. Yen  11. Yuan Renminbi\n";
+    std::cin >> currency;
+
+    //input must be between 1 and 11
+    do {
+        if (currency <= 0 || currency >= 12) {
+            std::cout << "Please enter a number between 1 and 11.\n";
+            std::cin >> currency;
+        }
+    } while (currency <= 0 || currency >= 12);
+
+    return currency;
+}
+
+
+double conversion(int currency, double cash) {
+    switch (currency) {
+     case 1:
+         return cash * 1;
+         break;
+     case 2:
+         return cash * .85;
+         break;
+     case 3:
+         return cash * .74;
+         break;
+     case 4:
+         return cash * 74.38;
+         break;
+     case 5:
+         return cash * 1.36;
+         break;
+     case 6:
+         return cash * 1.25;
+         break;
+     case 7:
+         return cash * 1.35;
+         break;
+     case 8:
+         return cash * .92;
+         break;
+     case 9:
+         return cash * 4.16;
+         break;
+     case 10:
+         return cash * 114.03;
+         break;
+     case 11:
+         return cash * 6.38;
+         break;
+     }
+}
+
+int main()
+{
+    
+    double convertedCash = conversion(currencyInput(), cashInput());
+ 
+
+    std::cout << "The converted amount is " << convertedCash;
+}
