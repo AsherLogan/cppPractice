@@ -1,0 +1,146 @@
+#include <iostream>
+
+void practiceDay(int day) {
+	switch (day) {
+	case 1:
+		std::cout << "Learn: Data types, operators, precedence, and conditions.\nRead: Chapter 2.\nFunctions: 1.";
+		break;
+	case 2:
+		std::cout << "Learn: Loops, control flow, basic i/o stream, and keywords.\nFunctions: 1.";
+		break;
+	case 3:
+		std::cout << "Learn: Arrays, strings, namespaces, and scope.\nRead: Chapter 10 pt 1, review Chapter 6.\nFunctions: 2.";
+		break;
+	case 4:
+		std::cout << "Learn: Pointers, references, function basics.\nRead: Chapter 10 pt 2.\n Functions: 2.";
+		break;
+	case 5:
+		std::cout << "Learn: Functions, overloading, OOP concepts.\nRead: Chapter 8, Chapter 16.\nFunctions: 3.\nLook how much you've learned!";
+		break;
+	case 6:
+		std::cout << "Learn: Objects, inheritance, polymorphism, abstraction, encapsulation, class vs instance.\nRead: Chapter 12, Chapter 17.\nFunctions: 2.\nKeep going!!";
+		break;
+	case 7:
+		std::cout << "Learn: Abstract classes, speacial classes and functions, constructors and destructors.\nRead: Chapter 13.\nFunctions 2.\nDon't stop now!";
+		break;
+	case 8:
+		std::cout << "Learn: Files and stream, dynamic memory allocation.\nRead: Chapter 23.\nFunctions: 2.";
+		break;
+	case 9:
+		std::cout << "Learn: Templates, STL, review.\nRead: Chapter 19, Chapter 21.\nFunctions: 2.";
+		break;
+	case 10:
+		std::cout << "Learn: Exception and signal handling, error catching/throwing.\nRead: Chapter 20.\nFunctions: 3.";
+		break;
+	case 11:
+		std::cout << "Stack unwinding, review.\nRead: Chapter 11.\nFunctions: 2.";
+		break;
+	case 12:
+		std::cout << "Learn: Multithreading, POSIX.\nRead: Chapter 3.\nFunctions: 1.";
+		break;
+	case 13:
+		std::cout << "Learn: Dictionaries, maps, multimaps, and unordered maps.\nRead: Chapter 9.\nFunctions: 2.";
+		break;
+	case 14:
+		std::cout << "Learn: Recursion, review.\nRead: Chapter M.\nFunctions: 3.";
+		break;
+	case 15:
+		std::cout << "Learn: Binary and hexadecimal numbers, sets, multisets, and unordered sets.\nRead: Chapter 18.\nFunctions: 3.";
+		break;
+	case 16:
+		std::cout << "Learn: Linked lists, forward lists.\nRead: Chapter 22.\nFunctions: 2.";
+		break;
+	case 17:
+		std::cout << "Learn: Queues, dequeues, stacks.\nRead: Review.\nFunctions: 3.";
+		break;
+	case 18:
+		std::cout << "Learn: Interfaces and sorting.\nFunctions: 3.";
+		break;
+	case 19:
+		std::cout << "Learn: Generics, STL algorithms (mutating and non-mutating), review.\nFunctions: 2.";
+		break;
+	case 20:
+		std::cout << "Learn: Binary search tree, order traversal.\n Sort array practice Chapter 10.4\nFunctions: 2.";
+		break;
+	case 21:
+		std::cout << "Learn: Runtime complexity, Regex, Bitwise review.\nFunctions: 2";
+		break;
+	case 22:
+		std::cout << "Functions: Currency converter\nDigital Calculator";
+		break;
+	case 23:
+		std::cout << "Functions: Student Management System\nAddress Book";
+		break;
+	case 24:
+		std::cout << "Functions: Stopwatch\nLibrary Management System";
+		break;
+	case 25:
+		std::cout << "Functions: Hangman\n\Tic Tac Toe";
+		break;
+	case 26:
+		std::cout << "Functions: Banking System.\nMath: Begin review!";
+		break;
+	case 27:
+		std::cout << "Functions: Credit Card Validator\n\Hotel Reservation System\nMath: Review.";
+		break;
+	case 28:
+		std::cout << "Functions: Casino Number Guessing Game\n\Supermarket Billing.\nMath: Review.";
+		break;
+	case 29:
+		std::cout << "Functions: Login and Registration System\n\Search Enging.\nMath: Review.";
+		break;
+	case 30:
+		std::cout << "Learn: GUI, Git flow.\nMath: Review.\nFunctions: 1 GUI + Git";
+		break;
+	case 31:
+		std::cout << "Functions: Snake and Ladder\nSudoku.\nMath: Review.";
+		break;
+	case 32:
+		std::cout << "Functions: Helicopter Game\n\Animation Recing.\nMath: Review. ";
+		break;
+	case 33:
+		std::cout << "Learn: Vectors, command line arguments, multidemensional arrays.\nFunctions: 2.";
+		break;
+	case 34:
+		std::cout << "Learn: Graphics and design, review trouble areas.\nFunctions: Trouble areas.";
+		break;
+	case 35:
+		std::cout << "Functions: Graphics to draw/move shape\nDigital Piano.";
+		break;
+	default:
+		std::cout << "Not a day!";
+	}
+}
+
+void completedTasks(char completion) {
+	if (completion == 'Y' || completion == 'y') {
+		std::cout << "Great work!! Now get some rest.";
+	}
+	else {
+		std::cout << "No? That's okay! You got this.";
+	};
+}
+
+
+int main() {
+	//today I reviewed data types, operators, loops and conditions, keywords, and header files
+
+
+	std::cout << "Welcome to your practice database! What day are you on? ";
+	
+	int day;
+
+	std::cin >> day;
+
+	practiceDay(day);
+
+	std::cout << "\nHave you completed all tasks for the day? Y/N ";
+
+	char completion;
+
+	std::cin >> completion;
+
+	completedTasks(completion);
+
+	return 0;
+}
