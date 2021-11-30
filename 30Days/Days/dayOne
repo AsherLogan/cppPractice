@@ -123,8 +123,6 @@ void completedTasks(char completion) {
 
 
 int main() {
-	//today I reviewed data types, operators, loops and conditions, keywords, and header files
-
 
 	std::cout << "Welcome to your practice database! What day are you on? ";
 	
